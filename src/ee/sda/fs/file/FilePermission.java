@@ -12,6 +12,7 @@ import java.util.Set;
 public class FilePermission {
 
     public static void main(String[] args) throws IOException {
+        //can't manage these permissions in Windows
         Path path = Paths.get("/home/eduard/.profile");
 
         PosixFileAttributes attrs = Files.readAttributes(path, PosixFileAttributes.class);
